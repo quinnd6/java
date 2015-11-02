@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+        xmlns:context="http://www.springframework.org/schema/context">
+         
+    <!-- <bean id="triangle" class="org.koushik.javabrains.Triangle">
+		<property name="pointA" ref="pointA" />
+		<property name="pointB" ref="pointB" />
+		<property name="pointC" ref="pointC" />
+	</bean>  -->
+	
+	<bean id="pointA" class="org.koushik.javabrains.Point">
+		<qualifier value="circleRelated" />
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	
+    <bean id="pointB" class="org.koushik.javabrains.Point">
+		<property name="x" value="-20" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<bean id="center" class="org.koushik.javabrains.Point">
+		<property name="x" value="20" />
+		<property name="y" value="0" />
+	</bean> 
+
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+		<list>
+		<value>mymessages</value>
+		</list>
+		</property>
+	</bean>
+	
+	<context:annotation-config/>
+	
+	<context:component-scan base-package="org.koushik.javabrains" />
+</beans>
+	

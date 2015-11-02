@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring"/>
+	<classpathentry kind="lib" path="C:/commons-dbcp-1.4-bin/commons-dbcp-1.4/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/commons-pool-1.6-bin/commons-pool-1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/db-derby-10.11.1.1-bin/lib/derby.jar"/>
+	<classpathentry kind="lib" path="C:/db-derby-10.11.1.1-bin/lib/derbyclient.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
